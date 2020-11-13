@@ -38,13 +38,7 @@ public class PostTaskMeta {
         WebElement element = driver.findElement(By.xpath("//table[@id='messlist']/tbody/tr[2]/td[1]"));
         String fromWho = driver.findElement((By.xpath("//table[@id='messlist']/tbody/tr[2]/td[4]"))).getText();
         String messageTheme = driver.findElement((By.xpath("//table[@id='messlist']/tbody/tr[2]/td[5]"))).getText();
-        Assert.assertEquals(fromWho,sender);
-        Assert.assertEquals(messageTheme,messageThemeToCheck);
-
-
-
-
-
-
+        Assert.assertEquals(fromWho, sender);
+        Assert.assertEquals(messageTheme, messageThemeToCheck);
     }
 }
